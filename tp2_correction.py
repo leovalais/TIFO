@@ -16,7 +16,7 @@ from PIL import Image
 #Get the current script directory
 script_dir = os.path.dirname(__file__)
 im_dir = os.path.join(script_dir, "images")
-"""
+
 ###############################################################################
 #I Gamma correction
 ###############################################################################
@@ -45,7 +45,7 @@ for gamma, line_id, col_id in zip(gammas,
     ax[line_id, col_id].axis("off")
     ax[line_id, col_id].set_title("Gamma = {0}".format(gamma))   
 fig.savefig("Ex1_im_gamma_correction.png")
-"""
+
 ###############################################################################
 #II Image filtering
 ###############################################################################
