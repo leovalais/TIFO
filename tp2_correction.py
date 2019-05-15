@@ -134,7 +134,7 @@ def convolve(arr, kernel):
             #Change the current pixel intensity
             filter_arr[x, y] = convolved_val
     return filter_arr[kd2: M + kd2, kd2: N + kd2]
-"""
+
 #Try different parameter values
 
 #a) Mean filter
@@ -273,7 +273,7 @@ for percent_change in [4, 20]:
         ax[line_id, col_id].axis("off")
         ax[line_id, col_id].set_title(title)   
     fig.savefig("Ex2_impulsive_noise_{0}_filter.png".format(percent_change))                      
-"""
+
 
 #Gaussian filtering in the Fourier domain
 sigma = 5
@@ -381,7 +381,7 @@ fig.savefig("Ex2_wiener_noisy_gaussian_deconvolution.png")
 ###############################################################################
 #III Edge detection
 ###############################################################################
-"""
+
 #Load the boat512 image
 glim_arr = Image.open(os.path.join(im_dir, "boat512.gif"))
 glim_arr = np.array(glim_arr)
@@ -464,4 +464,4 @@ for iter in range(1, 13):
         cnt_fig += 1
 
 fig.savefig("Ex3_laplacian_sharpening.png")
-"""
+
